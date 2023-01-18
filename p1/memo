@@ -1,0 +1,3 @@
+kubectl get nodes -o wides
+systemctl status k3s
+systemctl status k3s-agent
