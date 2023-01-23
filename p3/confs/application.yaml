@@ -6,9 +6,9 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/Jean-xavierr/argocd-playground-app.git
+    repoURL: https://github.com/Jean-xavierr/42Inception_Of_Things.git
     targetRevision: HEAD
-    path: .
+    path: dev
   destination:
     server: https://kubernetes.default.svc
     namespace: dev
