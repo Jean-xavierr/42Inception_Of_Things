@@ -6,9 +6,15 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/argoproj/argocd-example-apps.git
+    repoURL: https://github.com/Jean-xavierr/argocd-playground-app.git
     targetRevision: HEAD
-    path: guestbook
+    path: .
   destination:
     server: https://kubernetes.default.svc
-    namespace: guestbook
+    namespace: dev
+  syncPolicy:
+    syncOptions:
+    - CreateNamespace=true
+    automated:
+      selfHeal: true
+      prune: true
